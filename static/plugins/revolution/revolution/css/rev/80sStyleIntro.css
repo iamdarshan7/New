@@ -1,0 +1,38 @@
+
+	.eightygradient {
+	background: -webkit-linear-gradient(top, rgba(170,26,24,1) 0%, rgba(213,44,50,1) 39%, rgba(236,97,94,1) 45%, rgba(202,34,34,1) 69%, rgba(148,36,43,1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-stroke: 4px transparent;
+	letter-spacing: -4px;
+	text-shadow: 0px 0px 20px rgba(208,34,40,1);
+		  animation-name: blink2;
+	  animation-duration: 150ms;
+	  animation-iteration-count: infinite;
+	  animation-direction: alternate;
+	}
+	.eightybar {
+	  border-width: 2px;
+	  border-style: solid;
+	  border-color: #e53235;
+	  box-shadow: 0px 0px 20px 0px rgba(208,34,40,1);
+	  animation-name: blink1;
+	  animation-duration: 100ms;
+	  animation-iteration-count: infinite;
+	  animation-direction: alternate;
+	}
+	@keyframes blink1 {
+	   from {
+		  box-shadow: 0px 0px 20px 0px rgba(208,34,40,1);
+	   }
+	   to {
+		  box-shadow: 0px 0px 20px 0px rgba(208,34,40,0.75);
+	   }
+	}
+	@keyframes blink2 {
+	   from {
+		  text-shadow: 0px 0px 20px rgba(208,34,40,1);
+	   }
+	   to {
+		  text-shadow: 0px 0px 20px rgba(208,34,40,0.75);
+	   }
+	 }

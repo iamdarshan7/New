@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'content' %}
+
+<!-- Content -->
+{% for s in sug %}
+{% if s.is_active%}
+<div class="page-content bg-white">
+    <!-- inner page banner -->
+    <div class="bnr-inr bg-pt" style="background-image:url(s.sec1_inner1_image.url);">
+        <div class="container">
+            <div class="bnr-inr-entry">
+                <h1>DETAIL INFO OF US</h1>
+                <!-- Breadcrumb row -->
+                <div class="breadcrumb-row">
+                    <ul class="list-inline">
+                        <li><a href="{% url 'about_page:about' %}">About</a></li>
+                        <li>About Detail</li>
+                    </ul>
+                </div>
+                <!-- Breadcrumb row END -->
+            </div>
+        </div>
+    </div>
+    <!-- inner page banner END -->
+    <!-- contact area -->
+    <div class="content-area">
+        <div class="container max-w900">
+            <!-- blog start -->
+            <div class="blog-post blog-single">
+                <div class="post-title ">
+                    <h4 class="post-title fw5">{{s.sec1__inner4_title}}</h4>
+                </div>  
+                <div class="post-media img-effect zoom-slow"> <a href="#"><img src="{{s.sec1_inner4_image.url}}"
+                            alt=""></a>
+                    
+                </div>
+                <div class="post-text">
+                    <p>
+                        {{s.sec1_inner4_desc|safe}}
+                    </p>
+                    <p>
+                        {{s.sec1_inner4_sub_desc|safe}}
+                    </p>
+                </div>
+            </div>
+            <!-- <div class="section-full content-inner-2 bg-gray" style="background-image:url({{sug.sec5_bg_image.url}}); background-size:cover">
+                <div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center section-head">
+							<h2 class="fw7 m-b0">
+								{{sug.sec5_heading}}
+							</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="testimonial-one owl-dots-black-full owl-loaded owl-theme owl-carousel owl-btn-center-lr owl-btn-3">
+								{% for obj2 in objects2 %}
+								<div class="item">
+									<div class="testimonial-3">
+										<div class="testimonial-pic radius"><img src="{{obj2.sec5_inner_image.url}}" width="100" height="100" alt=""></div>
+										<div class="testimonial-text">
+											<p>{{obj2.sec5_inner_desc|safe}}</p>
+										</div>
+										<div class="testimonial-detail"> <strong class="testimonial-name">{{obj2.sec5_inner_name}}</strong> <span class="testimonial-position">{{obj2.sec5_inner_profession}}</span> </div>
+									</div>
+								</div>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+            <!-- blog END -->
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endfor %}
+{% endblock 'content' %}
+<!-- Content END-->
+<!-- Footer -->

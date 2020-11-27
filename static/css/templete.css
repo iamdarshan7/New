@@ -1,0 +1,579 @@
+/*==========================
+	Custom css
+==========================*/
+/*====| - Font_Size_And_Font_Family |====*/
+.dis-block{ 
+	display:block;
+}
+.bg-img-fix {
+    background-size: cover;
+}
+.bg-secondry {
+    background-color: #2c4a6b;
+}
+.text-gray-dark {
+    color: #9a9a9a;
+}
+#masonry{
+	width: 100%;
+}
+@media only screen and (max-width: 1024px){
+	.footer-info-bar .icon-content p{
+		font-size: 12px;
+	}
+	.footer-info-bar [class*="col-"]{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.footer-info-bar .icon-bx-wraper{
+		padding: 20px;
+	}
+}
+@media only screen and (max-width: 768px){
+	.abuot-8-box.left{
+		position: relative;
+		left: 0;
+		margin: 0;
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 600px){
+	.footer-info-bar [class*="col-"]{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+@media only screen and (max-width: 360px){
+	.counter-box li{
+		width: 100%;
+		padding: 10px;
+	}
+	.counter-box li:last-child {
+		padding: 10px; 
+	}
+	.our-history.nav li a{
+		padding: 10px 15px;
+		font-size: 14px;
+	}
+	.facility .icon-bx-wraper{
+		padding: 40px 20px;
+	}
+}
+/*====| - New_Work |====*/
+.box-icon .icon-cell > div i{
+	line-height:65px;
+	transition:all 0.5s;
+}
+.box-icon .icon-cell > div{
+	width:65px;
+	height:65px;
+	overflow:hidden;
+	display:block;
+}
+.box-icon:hover .icon-cell span{
+	margin-top:-65px;
+	transition:all 0.5s;
+}
+.box-icon .icon-cell span{
+	display:block;
+	transition:all 0.5s;
+}
+.box-services{
+	border: 1px solid #f8f8f8;
+	border-radius:4px;
+	transition:all 0.8s;
+	position:relative;
+	overflow:hidden;
+}
+.box-services > i {
+	font-size:0;
+	position:absolute;
+	bottom:0;
+	right:0;
+	transform: scale(0);
+	-moz-transform: scale(0);
+	-webkit-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+}
+.box-services:hover > i {
+	font-size:90px;
+	opacity:0.2;
+	transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+}
+.box-services:hover{
+	color:#fff;
+}
+.box-services:hover .icon-cell,
+.box-services:hover .tilte{
+	color:#fff;
+}
+/*====| - Form_Tax |====*/
+.form-tax{
+	box-shadow: 10px 10px 40px 0 rgba(39,50,114,0.25);
+	max-width:700px;
+	margin-left:-50px;
+}
+.form-tax label{
+	font-size:15px;
+	text-transform:capitalize;
+}
+.form-tax .bootstrap-select .dropdown-toggle,
+.form-tax input.form-control{
+	border: 2px solid #e7ecf1 !important;
+	border-radius:4px;
+	height: 45px;
+	padding: 10px 20px;
+}
+.bootstrap-select.btn-group .dropdown-toggle .filter-option{
+	font-size: 15px;
+}
+.form-tax .site-button{
+	padding: 12px 25px;
+}
+.form-tax .form-group {
+	margin-bottom: 15px;
+}
+.tax-info-chart .form-tax{
+	box-shadow:none;
+	margin-left: 0;
+	max-width:100%;
+}
+.chart-box{
+	padding:30px;
+	background: #fff;
+	width: 100%;
+}
+/*====| - Blog |====*/
+.theme-blog .post-comment,
+.theme-blog .post-author,
+.theme-blog .post-date{
+	font-size:13px;
+	font-weight:500;
+	padding-left:5px;
+	
+}
+.about-us-box .box-bg .icon-bx-wraper{
+	border:0;
+}
+/*====| - Services |====*/
+.service-list{
+	list-style:none;
+	padding:0;
+}
+.service-list li{
+	margin-bottom:3px;
+}
+.service-list li a{
+	padding:15px 20px;
+	background-color:#f7f9fb;
+	display:block;
+	width:100%;
+	color:#000242;
+}
+.download-brochure {
+    padding: 30px;
+    background: #f7f9fb;
+    color: #000242;
+}
+.service-help {
+	padding:30px;
+}
+.service-help i{
+	font-size:60px;
+}
+.service-help h4{
+	color:#fff;
+}
+.service-help ul{
+	list-style:none;
+	margin:0;
+}
+.service-help ul li{
+	margin-bottom:5px;
+}
+/*====| - Header_Style_1 |====*/
+.daz-header.header-style-1 .header-nav .nav > li > a,
+.daz-header.header-style-1 .is-fixed .header-nav .nav > li > a{
+	padding: 19px 12px 19px 12px;
+}
+.daz-header.header-style-1 .is-fixed .secondary-nav,
+.daz-header.header-style-1 .secondary-nav{
+	padding: 16px 0 16px 0;
+}
+.daz-header.header-style-1 .is-fixed .daz-logo,
+.daz-header.header-style-1 .daz-logo{
+	height: 60px;
+}
+.daz-header.header-style-1 .site-button-link.white{
+	color:#fff;
+}	
+.daz-header.header-style-1 .site-button{
+	color:#fff;
+}
+.daz-header.header-style-1 .navbar-toggler{
+	margin:23px 0 20px 10px;
+}
+.daz-header.header-style-1 .daz-logo,
+.daz-header.header-style-1 .daz-logo img{
+	    max-width: 130px;
+}
+@media only screen and (max-width: 991px){
+	.daz-header.header-style-1 .header-nav .nav > li > a, 
+	.daz-header.header-style-1 .is-fixed .header-nav .nav > li > a{
+		padding: 10px 20px 10px 20px;
+	}
+	.daz-header.header-style-1.mobile-nav .header-nav .daz-logo img{
+		width: 110px;
+	}
+	.daz-header.header-style-1.mobile-nav .header-nav .daz-logo{
+		padding: 15px;
+		height: auto;
+		display: block;
+		width: 100%;
+		max-width: 100%;
+	}
+	.daz-header.header-style-1.mobile-nav .header-nav .nav > li > .sub-menu, 
+	.daz-header.header-style-1.mobile-nav .header-nav .nav > li > .mega-menu{
+		box-shadow:none;
+	}
+	.daz-header.header-style-1 [class*="bg-"] .header-nav .nav > li.active > a, 
+	.daz-header.header-style-1 [class*="bg-"] .header-nav .nav > li > a,
+	.daz-header.header-style-1 [class*="bg-"] .header-nav .nav > li.current-menu-item > a{
+		color:#273272;
+	}
+	.daz-header.header-style-1 .header-nav .nav > li .sub-menu li a{
+		color:#101042;
+	}	
+}
+/*====| - Portfolio |====*/
+.portfolio p{
+	margin-bottom:0;	
+}
+.portfolio .gallery-box{
+	box-shadow: 10px 10px 30px 0 rgba(39,50,114,0.2);
+}
+/*====| - Faq |====*/
+.faq-box .form-control{
+	border:2px solid rgba(39,50,114,0.2);
+	height:50px;
+	padding:15px;
+	font-size:15px;
+}
+.faq-box textarea.form-control{
+	height:150px;
+}
+/*====| - Team |====*/
+.team-section{
+	position: relative;
+	overflow: hidden;
+}
+.team-section .team-content{
+    position: absolute;
+    bottom: -46px;
+    width: 100%;
+    padding: 10px 25px;
+	transition: all 0.5s;
+}
+.team-section:hover .team-content{
+	bottom: 0;
+	transition: all 0.5s;
+}
+.team-section .team-content a{
+	font-size: 18px;
+	margin-right: 10px;
+}
+.team-section .team-content a:hover{
+	color:#fff;
+	opacity:0.7;
+}
+/*====| - Error_Page |====*/
+.error-page .error-value{
+    font-size: 64px;
+    font-weight: 700;
+	line-height: 60px;
+}
+.error-page .error-content{
+	opacity: 0.8;
+    font-size: 17px;
+    line-height: 30px;
+    font-family: roboto;
+}
+.footer .social-icon a{
+	font-size: 20px;
+}
+.footer .links a {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 15px;
+}
+.bnr-inr-entry{
+	position: relative;
+}
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+.error-page .site-logo{
+	width: 200px;
+}
+.footer-full .widget_getintuch li{
+	margin-bottom:14px;
+}
+.footer-full .footer-bottom{
+	border-top:1px solid rgba(255,255,255,0.1);
+}
+.team-slider .Team-Position,
+.team-slider .tp-caption.Team-Description, 
+.team-slider .tp-caption.Team-Name, 
+.team-slider .Team-Namem,
+.team-slider .tp-caption.Team-Position,
+.team-slider .Team-Description{
+	font-family:Montserrat;
+}	
+
+/*====| - Our_History |====*/
+.our-history { 
+	margin:0 auto;
+	list-style:none;
+	display: table;
+	background:#fff;
+	box-shadow:7px 7px 15px 0 rgba(39,50,114,0.1);
+}
+.our-history li {
+    display: inline-block;
+    float: left;
+    margin-left: -1px;
+}
+.our-history li a{
+	padding: 10px 30px;
+	display: inline-block;
+	font-size: 18px;
+	font-family: "Montserrat",sans-serif;
+	border: 1px solid rgba(39,50,114,0.1);
+	transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+}
+.our-history li a.active{
+	color:#fff;
+}
+
+.img-full{
+	width: 100%;
+}
+/*====| - Stats_Box |====*/
+.stats-box{
+	transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+}
+.stats-box:hover{
+	background-color:rgba(255,255,255,0.9);
+}
+.stats-box:hover .counter,
+.stats-box:hover .tilte,
+.stats-box:hover{
+	color:#273272;
+}
+
+@media only screen and (max-width: 1024px){
+	.facility .icon-bx-wraper.box-icon{
+		padding: 40px 20px;
+	}
+	.medi-services .max-w500,
+	.our-services-logo .max-w500{
+		margin: 0;
+		padding: 0;
+	}
+}
+@media only screen and (max-width: 768px){
+	.form-tax {
+		max-width: 90%;
+		margin: auto;
+	}
+	.facility .icon-bx-wraper.box-icon{
+		padding: 70px;
+	}
+	.medi-services .max-w500,
+	.our-services-logo .max-w500{
+		max-width: 100%;
+	}
+	.header-nav.navbar-collapse .nav.navbar-nav .active > a{
+		color: #000;
+	}
+}
+@media only screen and (max-width: 600px){
+	.pricingtable-wrapper.style2.active{
+		margin-top: 0;
+	}
+	.header-nav.navbar-collapse .nav.navbar-nav .active > a{
+		color: #000;
+	}
+}
+@media only screen and (max-width: 360px){
+	.error-page .error-value{
+		font-size: 50px;
+		line-height: 50px;
+		margin-bottom: 15px;
+	}
+	.facility .icon-bx-wraper.box-icon{
+		padding: 40px 20px;
+	}
+	.d-flex {
+		width: 100%;
+	}
+	.pricingtable-wrapper.style2.active{
+		margin-top: 0;
+	}
+	.max-w500{
+		max-width: 100%;
+	}
+}
+.pagination-bx .pagination .active a{
+	color: #fff;
+}
+
+/*====| - Medical |====*/
+.tp-overlay{
+	/*====| - Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0390b9+0,00b1a2+100 |====*/
+	background: #0390b9; /*====| - Old_Browsers |====*/
+	background: -moz-linear-gradient(left, #0390b9 0%, #00b1a2 100%); /*====| - FF3.6-15 |====*/
+	background: -webkit-linear-gradient(left, #0390b9 0%,#00b1a2 100%); /*====| - Chrome10-25,Safari5.1-6 |====*/
+	background: linear-gradient(to right, #0390b9 0%,#00b1a2 100%); /*====| - W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ |====*/
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0390b9', endColorstr='#00b1a2',GradientType=1 ); /*====| - IE6-9 |====*/
+	opacity:0.8 !important;
+}
+.medi-about .box-services {
+    margin-top: -40px;
+    box-shadow: 10px 10px 20px 0px rgba(0,56,63,0.15);
+	background-color:#fff;
+	border:0;
+}
+.medi-client .medi-about .box-services{
+	margin-top:0;
+}
+.medi-footer .footer-bottom,
+.medi-footer .footer-top{
+	background-color:#1f3234;
+}
+.medi-footer .footer-bottom{
+	border-top:1px solid rgba(255,255,255,0.05);
+}
+/*====| - Top_Bar |====*/
+.topbar-left .top-author-link li{
+	padding-right:25px;
+}
+.topbar-left .top-author-link li a{
+	position:relative;
+}
+.topbar-left .top-author-link li a:after{
+	width: 1px;
+	height: 15px;
+	content: "";
+	right: -14px;
+	position: absolute;
+	background-color: #000;
+	display: block;
+	top: 5px;
+	transform: rotate(25deg);
+	opacity: 0.3;
+}
+.topbar-left .top-author-link li:last-child a:after{
+	content:none;
+}
+.topbar-left .top-author-link li a:before{
+	width: 100%;
+	height: 1px;
+	content: "";
+	position: absolute;
+	background-color: #000;
+	display: block;
+	left:0;
+	bottom:5px;
+	opacity:0;
+	transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	-o-transition:all 0.5s;
+}
+.topbar-left .top-author-link li a:hover:before{
+	bottom:0;
+	opacity:1;
+}
+/*====| - Color_And_Bg |====*/
+.bg-primary .topbar-left .top-author-link li a:before,
+.bg-primary .topbar-left .top-author-link li a:after{
+	background-color: #fff;
+}
+.bg-primary .topbar-left .top-author-link li a{
+	color:#fff;
+}
+@media only screen and (max-width: 767px){
+	.medi-about{
+		padding-top:30px;
+	}
+	.medi-about .box-services{
+		margin-top:0;
+	}
+	
+}
+h4,
+.team-info-box h4,
+.widget h5,
+.post-title,
+.post-title h4,
+.icon-content .tilte,
+.team-content h6,
+.dez-title{
+	font-weight: 600;
+}
+.img-box-cover {
+    height: 100%;
+    object-fit: cover;
+}
+@media only screen and (max-width: 768px){
+	.daz-header.header.navs1 .nav.navbar-nav .active > a{
+		color: #fff!important;
+	}
+	.pricingtable-wrapper.style2{
+		padding: 20px;
+	}
+	.pricingtable-wrapper.style2.active{
+		padding: 50px 20px;
+	}
+}
+@media only screen and (max-width: 767px){
+	.mission-value .list-check{
+		margin-bottom:0;
+	}
+	.our-mission .m-b40{
+		margin-bottom:20px;
+	}
+}
+@media only screen and (max-width: 600px){
+	.medi-services .fw3.m-b50{
+		margin-bottom: 10px;
+	}
+}
+@media only screen and (max-width: 360px){
+	.accordion .panel .acod-title a{
+		padding-right: 30px;
+	}
+}

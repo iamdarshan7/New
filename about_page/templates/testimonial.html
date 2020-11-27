@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'content' %}
+<!-- Content -->
+
+{% for s in sug %}
+{% if s.is_active %}
+<div class="page-content bg-white">
+	<!-- inner page banner -->
+	<div class="bnr-inr bg-pt" style="background-image:url({{s.top_bg_image.url}});">
+		<div class="container">
+			<div class="bnr-inr-entry">
+				<h1>{{s.top_heading}}</h1>
+				<!-- Breadcrumb row -->
+				<div class="breadcrumb-row">
+					<ul class="list-inline">
+						<li><a href="{% url 'about_page:about' %}">About</a></li>
+						<li>{{s.top_heading}}</li>
+					</ul>
+				</div>
+				<!-- Breadcrumb row END -->
+			</div>
+		</div>
+	</div>
+	<!-- inner page banner END -->
+	<!-- contact area -->
+	<div class="content-block">
+		<div class="section-full content-inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-5">
+						<div class="sticky-top">
+							<div class="widget widget-testimonial p-a20 bg-gray">
+								<div
+									class="widget-project-box owl-carousel owl-none owl-theme owl-dots-black-full owl-loaded owl-drag text-center">
+									{% for d in data %}
+									<div class="item">
+										<div class="testimonial">
+											<div class="testimonial-pic radius shadow"><img
+													src="{{d.sec5_inner_image.url}}" alt="" width="100" height="100">
+											</div>
+											<div class="testimonial-text">
+												<p>
+													{{d.sec5_inner_desc}}
+												</p>
+											</div>
+											<div class="testimonial-detail"> <strong class="testimonial-name">
+													{{d.sec5_inner_name}}</strong> <span class="testimonial-position">{{d.sec5_inner_profession}}</span>
+											</div>
+										</div>
+									</div>
+									{% endfor  %}
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8 col-md-7">
+						<h2 class="m-t0 m-b10 fw6">{{s.sec_title}}</h2>
+						<p class="m-b40">
+							{{s.sec_desc|safe}}
+							</p>
+						<div class="row">
+							{% for d in data %}
+							<div class="col-md-12 col-lg-6 m-b20">
+								<div class="testimonial-1">
+									<div class="testimonial-text">
+										<p>{{d.sec5_inner_desc}}</p>
+									</div>
+									<div class="testimonial-detail clearfix">
+										<div class="testimonial-pic quote-left radius shadow"><img
+												src="{{d.sec5_inner_image.url}}" alt="" width="100" height="100">
+										</div>
+										<strong class="testimonial-name">{{d.sec5_inner_name}}</strong> <span
+											class="testimonial-position">{{d.sec5_profession}}</span>
+									</div>
+								</div>
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{% for da in data1 %}
+		{% if da.is_active %}
+		<div class="section-full content-inner-2 bg-gray"
+			style="background-image:url({{da.sec5_bg_image.url}}); background-size:cover">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center section-head">
+						<h2 class="fw7 m-b0">{{da.sec5_heading}}</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div
+						class="testimonial-one owl-dots-black-full owl-loaded owl-theme owl-carousel owl-btn-center-lr owl-btn-3">
+						   {% for d in data %}
+							<div class="item">
+								<div class="testimonial-3">
+									<div class="testimonial-pic radius"><img src="{{d.sec5_inner_image.url}}"
+											width="100" height="100" alt=""></div>
+									<div class="testimonial-text">
+										<p>{{d.sec5_inner_desc}}</p>
+									</div>
+									<div class="testimonial-detail"> <strong class="testimonial-name">
+										{{d.sec5_inner_name}}</strong> <span class="testimonial-position">{{d.sec5_inner_profession}}</span> </div>
+								</div>
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{% endif %}
+		{% endfor %}
+	</div>
+	<!-- contact area END -->
+</div>
+{% endif %}
+{% endfor %}
+<!-- Content END-->
+{% endblock 'content' %}
